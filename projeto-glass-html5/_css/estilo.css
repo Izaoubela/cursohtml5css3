@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(235, 235, 235);
+    color: rgba(0, 0, 0, 0.9)
+}
+p {
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/* Formatação de imagens com legendas */
+
+figure.foto-legenda {
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 1px black;
+}
+
+figure.foto-legenda img {
+    width: 100%; /*preenchimento total do espaço*/ 
+    height: 100%;
+
+}
+
+figure.foto-legenda figcaption {
+    position: absolute; /* posição absoluta em relação a tag figure*/ 
+    top: 0px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 100%;
+    height: 100%;
+    padding: 10px; 
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+figure.foto-legenda:hover figcaption {
+    opacity: 1;
+}
+
+/* Formatação do MENU */ 
+nav#menu {
+    display: block;
+}
+
+nav#menu ul{
+    list-style: none;
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+nav#menu li {
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px; /* uma margem dentro do botão*/ 
+    margin: 2px; /* uma margem fora, criando o espaço entre um e outro*/ 
+}
+
+nav#menu h1 {
+    display: none; 
+}
+
